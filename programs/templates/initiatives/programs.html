@@ -1,0 +1,9 @@
+<h1>{{ initiative.initiative_name }}</h1>
+{{ initiative.program_set }}
+<ul>
+  {% for p in programs %}
+    <li>
+      {{ p.program_name }}: ${{ p.budget }}
+    </li>
+  {% endfor %}
+</ul>

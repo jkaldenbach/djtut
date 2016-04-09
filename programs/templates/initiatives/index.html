@@ -1,0 +1,13 @@
+{% if initiatives %}
+  <ul>
+    {% for i in initiatives %}
+      <li>
+          {{i.initiative_name}}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>
+    No initiatives exist.
+  </p>
+{% endif %}
